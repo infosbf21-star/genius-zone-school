@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { GraduationCap } from "lucide-react";
+import { school } from "@/lib/school";
+export default function Header(){return <header className="bg-white border-b border-blue-100 sticky top-0 z-30"><div className="container min-h-20 flex items-center justify-between gap-4"><Link href="/" className="flex items-center gap-3"><span className="w-12 h-12 rounded-2xl bg-blue-700 text-white grid place-items-center"><GraduationCap size={27}/></span><span><b className="block text-blue-950">{school.nameBn}</b><small className="text-blue-600">{school.name}</small></span></Link><nav className="hidden md:flex items-center gap-5 text-sm font-semibold"><Link href="/#about">আমাদের সম্পর্কে</Link><Link href="/#teachers">শিক্ষকবৃন্দ</Link><Link href="/admission">ভর্তি</Link><Link href="/results">ফলাফল</Link><Link href="/#contact">যোগাযোগ</Link></nav><Link className="btn text-sm" href="/admin/login">Admin Login</Link></div></header>}

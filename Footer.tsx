@@ -1,0 +1,2 @@
+import { school } from "@/lib/school";
+export default function Footer(){return <footer id="contact" className="bg-blue-950 text-blue-50 py-10"><div className="container grid md:grid-cols-2 gap-6"><div><h3 className="font-bold text-xl">{school.nameBn}</h3><p className="text-blue-200 mt-2">{school.tagline} · {school.slogan}</p></div><div className="md:text-right text-blue-200"><p>{school.address}</p><p>যোগাযোগ: বিদ্যালয় অফিসে যোগাযোগ করুন</p><p className="mt-4 text-xs">© {new Date().getFullYear()} Genius Zone Model School. All rights reserved.</p></div></div></footer>}
